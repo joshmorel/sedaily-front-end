@@ -17,7 +17,7 @@ module.exports = {
   // required to lint *.vue files
   plugins: [
     'vue',
-    // 'import'
+    'import'
   ],
   settings: {
     'import/resolver': {
@@ -33,7 +33,7 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
-    // 'import/no-unresolved': [2, {commonjs: true}]
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'import/no-unresolved': [2, {commonjs: true}]
   }
 }
